@@ -115,17 +115,38 @@
        - El horario es una tabla de datos: <table> con <caption>,
          y celdas de encabezado <th scope="col"> / <th scope="row">.
        ============================================================ -->
-  <div class="pie">
+  <footer class="pie">
     <div>
-      <div class="pie-titulo">Visítanos</div>
-      <div>Carrera 7 # 12-45, Santuario, Risaralda</div>
-      <div>Tel. 606 368 0000</div>
+      <h2>Visítanos</h2>
+      <address>
+        Carrera 7 # 12-45, Santuario, Risaralda<br>
+        Tel. <a href="tel:+576063680000">606 368 0000</a>
+      </address>
     </div>
     <div>
-      <div class="pie-titulo">Horario</div>
-      <div>Lunes a viernes: 8:00 a. m. – 6:00 p. m.</div>
-      <div>Sábados: 9:00 a. m. – 2:00 p. m.</div>
+      <table>
+        <caption>Horario</caption>
+        <thead>
+          <tr>
+            <th scope="col">Día</th>
+            <th scope="col">Abre</th>
+            <th scope="col">Cierra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Lunes a viernes</th>
+            <td>8:00 a. m.</td>
+            <td>6:00 p. m.</td>
+          </tr>
+          <tr>
+            <th scope="row">Sábados</th>
+            <td>9:00 a. m.</td>
+            <td>2:00 p. m.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div>
+  </footer>
 </body>
 </html>
