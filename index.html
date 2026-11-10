@@ -95,13 +95,16 @@
          - El campo de correo necesita: <label for="...">, type="email", id y required.
          - El "botón" es un div con onclick: cámbialo por <button type="submit">.
          ============================================================ -->
-    <div class="seccion" id="suscripcion">
-      <div class="subtitulo">Recibe nuestras novedades</div>
-      <div class="formulario">
-        <input type="text" placeholder="Tu correo">
-        <div class="boton" onclick="alert('¡Gracias!')">Suscribirme</div>
-      </div>
-    </div>
+    <section class="seccion" id="suscripcion" aria-labelledby="suscripcion-titulo">
+      <h2 id="suscripcion-titulo">Recibe nuestras novedades</h2>
+      <form class="formulario" action="#" method="post">
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email" required>
+        </div>
+        <button type="submit" class="boton">Suscribirme</button>
+      </form>
+    </section>
 
   </main>
 
