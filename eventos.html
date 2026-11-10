@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catas de café · Café Altamira</title>
+  <meta name="description" content="Catas de café especial en la finca Altamira, Santuario (Risaralda). Consulta fechas, cupos y precios e inscríbete.">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <a class="logo" href="index.html">
+      <img src="img/grano.svg" alt="" width="28" height="28">
+      Café Altamira
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#cafes">Cafés</a></li>
+        <li><a href="index.html#historia">Historia</a></li>
+        <li><a href="index.html#suscripcion">Suscripción</a></li>
+        <li><a href="eventos.html" aria-current="page">Catas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <div class="hero">
+      <h1>Catas de café</h1>
+      <p>Aprende a reconocer aromas y sabores con nuestros caficultores, en la finca o en la tienda.</p>
+      <a class="boton" href="#inscripcion">Inscribirme</a>
+    </div>
+
+    <section class="seccion" id="catas" aria-labelledby="catas-titulo">
+      <h2 id="catas-titulo">Próximas catas</h2>
+      <div class="productos">
+        <article class="producto">
+          <h3>Cata de iniciación</h3>
+          <p>Aprende a oler, sorber y describir tres cafés de la casa.</p>
+          <ul class="datos-cata">
+            <li>Fecha: <time datetime="2026-11-20T16:00">20 de noviembre de 2026, 4:00 p. m.</time></li>
+            <li>Lugar: tienda Café Altamira, Santuario</li>
+            <li>Cupos: 12</li>
+          </ul>
+          <p class="precio">$35.000 por persona</p>
+        </article>
+        <article class="producto">
+          <h3>Cata de cafés de altura</h3>
+          <p>Comparamos el Geisha de Altura con cafés de otras fincas de Risaralda.</p>
+          <ul class="datos-cata">
+            <li>Fecha: <time datetime="2026-11-27T10:00">27 de noviembre de 2026, 10:00 a. m.</time></li>
+            <li>Lugar: finca Altamira, vereda La Esmeralda</li>
+            <li>Cupos: 8</li>
+          </ul>
+          <p class="precio">$60.000 por persona</p>
+        </article>
+        <article class="producto">
+          <h3>Cata de procesos</h3>
+          <p>Lavado, honey y natural: descubre cómo cambia el sabor según el proceso.</p>
+          <ul class="datos-cata">
+            <li>Fecha: <time datetime="2026-12-04T15:00">4 de diciembre de 2026, 3:00 p. m.</time></li>
+            <li>Lugar: finca Altamira, vereda La Esmeralda</li>
+            <li>Cupos: 10</li>
+          </ul>
+          <p class="precio">$45.000 por persona</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" id="lugar" aria-labelledby="lugar-titulo">
+      <h2 id="lugar-titulo">Dónde catamos</h2>
+      <figure class="figura">
+        <img src="img/finca.svg" width="600" height="300"
+             alt="Casa de la finca con techo rojo entre montañas verdes cubiertas de cafetales">
+        <figcaption>Las catas de altura y de procesos se hacen en la finca Altamira.</figcaption>
+      </figure>
+    </section>
+
+    <section class="seccion" id="inscripcion" aria-labelledby="inscripcion-titulo">
+      <h2 id="inscripcion-titulo">Inscripción</h2>
+      <form class="inscripcion" action="#" method="post">
+        <p class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </p>
+        <p class="campo">
+          <label for="correo-cata">Correo electrónico</label>
+          <input type="email" id="correo-cata" name="correo" autocomplete="email" required>
+        </p>
+
+        <fieldset>
+          <legend>¿A qué cata quieres asistir?</legend>
+          <p class="opcion">
+            <input type="radio" id="cata-iniciacion" name="cata" value="iniciacion" required>
+            <label for="cata-iniciacion">Cata de iniciación · 20 de noviembre</label>
+          </p>
+          <p class="opcion">
+            <input type="radio" id="cata-altura" name="cata" value="altura">
+            <label for="cata-altura">Cata de cafés de altura · 27 de noviembre</label>
+          </p>
+          <p class="opcion">
+            <input type="radio" id="cata-procesos" name="cata" value="procesos">
+            <label for="cata-procesos">Cata de procesos · 4 de diciembre</label>
+          </p>
+        </fieldset>
+
+        <p class="opcion">
+          <input type="checkbox" id="datos" name="datos" required>
+          <label for="datos">Acepto el tratamiento de datos</label>
+        </p>
+
+        <button type="submit" class="boton">Inscribirme</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div>
+      <h2>Visítanos</h2>
+      <address>
+        Carrera 7 # 12-45, Santuario, Risaralda<br>
+        Tel. <a href="tel:+576063680000">606 368 0000</a>
+      </address>
+    </div>
+    <div>
+      <table>
+        <caption>Horario</caption>
+        <thead>
+          <tr>
+            <th scope="col">Día</th>
+            <th scope="col">Abre</th>
+            <th scope="col">Cierra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Lunes a viernes</th>
+            <td>8:00 a. m.</td>
+            <td>6:00 p. m.</td>
+          </tr>
+          <tr>
+            <th scope="row">Sábados</th>
+            <td>9:00 a. m.</td>
+            <td>2:00 p. m.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </footer>
+</body>
+</html>

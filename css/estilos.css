@@ -149,6 +149,31 @@ body {
 }
 .formulario .boton { background: var(--cafe); color: #fff; }
 
+/* ----- Catas (eventos.html) ----- */
+.datos-cata { margin: .5rem 0; padding-left: 1.2rem; }
+.inscripcion { max-width: 520px; }
+.inscripcion .campo { margin: 0 0 1rem; }
+.inscripcion .campo label { display: block; font-weight: 600; margin-bottom: .25rem; }
+.inscripcion input[type="text"],
+.inscripcion input[type="email"] {
+  width: 100%;
+  padding: .7rem 1rem;
+  border: 2px solid #8a7a6d;
+  border-radius: .5rem;
+  font: inherit;
+}
+.inscripcion fieldset {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 2px solid #8a7a6d;
+  border-radius: .5rem;
+}
+.inscripcion legend { padding: 0 .5rem; font-weight: 600; }
+.inscripcion .opcion { display: flex; align-items: center; gap: .5rem; margin: .5rem 0; }
+.inscripcion input[type="radio"],
+.inscripcion input[type="checkbox"] { width: 1.2rem; height: 1.2rem; accent-color: var(--cafe); }
+.inscripcion .boton { background: var(--cafe); color: #fff; }
+
 /* ----- Pie ----- */
 .pie {
   display: flex;
